@@ -1,0 +1,182 @@
+
+
+.categories  {
+    padding: 35px 0 50px 0;
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        display: none;
+    }
+    .swiper-button-next, .swiper-button-prev i {
+        font-size: 20px;
+        color: #999999;
+        text-align: center;
+        transition: all linear .2s;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: -50px;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        right: -50px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        top: 40%;
+    }
+}
+.category-item , .mega-item{
+    text-align:  center;
+    &:hover{
+        .book-holder{
+            background-color: #fff9df;
+            border-color: #fff9df;
+        }
+        .product-name , .book-name{
+            color: $second-color;
+        }
+    }
+    .plate{
+        transition: all linear .3s;
+    }
+}
+
+.product-ancor{
+    display: block;
+    &:hover{
+        .product-name{
+            color: $second-color;
+        }
+    }
+}
+.book-name{
+    font-size: 16px;
+    color: #904a42;
+    font-weight: 700;
+    text-align: center;
+    transition: all linear .2s;
+    margin-top: 15px;
+    text-transform: capitalize;
+&:hover{
+    color: $second-color;
+}
+&:focus{
+    text-decoration: none;
+}
+}
+.book-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid rgba(222,222,222,0.5);
+    transition: all linear .2s;
+    >div {
+        max-width: 85px;
+        max-height: 95px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+// books banner
+
+.books-banner{
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        img{
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+        &::before{
+            position: absolute;
+            top: 0;
+            left: -75%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.5) 100%);
+            transform: skewX(-25deg);
+        }
+        &:hover{
+            &::before{
+                animation: shine 1s;
+            }
+        }
+       
+    }
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+
+
+
+@include min-768 {
+    .product-name{
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+
+@include max-992{
+    .categories .swiper-button-prev, .categories .swiper-rtl .swiper-button-next{
+        left: -40px;
+    }
+    .categories .swiper-button-next, .categories .swiper-rtl .swiper-button-prev{
+        right: -40px;
+    }
+}
+
+@include max-768{
+    .books-banner a::before{
+        display: none;
+    }
+    .book-name{
+        font-size: 15px;
+    }
+    .book-holder{
+        margin: auto;
+       
+    }
+    .categories{
+        padding: 35px 0 80px 0;
+        .swiper-button-next, .swiper-button-prev{
+            display: none;
+        }
+    }
+    .categories .swiper-horizontal > .swiper-pagination-bullets, .categories .swiper-pagination-bullets.swiper-pagination-horizontal, .categories .swiper-pagination-custom, .categories .swiper-pagination-fraction{
+        display: block;
+        bottom: -50px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .book-holder{
+        width: 140px;
+        height: 140px;
+    }
+    .books-banner a{
+        height: 130px;
+        img{
+            height: 100%;
+           
+        }
+    }
+    
+}
