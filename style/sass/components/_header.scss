@@ -73,7 +73,6 @@ input{
     }
     &:focus{
         outline: none;
-        border-color:$second-color;
     }
 }
 }
@@ -94,11 +93,7 @@ align-items: center;
 span{
     transition: all linear .2s;
 }
-&:hover{
-    span{
-        color: $second-color;
-    }
-}
+
 img{
     margin-inline-start: 6px;
 }
@@ -137,11 +132,6 @@ i{
 
 .favourite  {
 margin-inline-start: 30px;
-&:hover{
-    i{
-        color: $second-color;
-    }
-}
 
 }
 
@@ -172,11 +162,7 @@ margin-inline-start: 30px;
 i{
     transition: all linear .2s;
 }
-&:hover{
-    i{
-        color: $second-color;
-    }
-}
+
 }
 .cart div {
  position: relative;
@@ -233,7 +219,6 @@ li:last-child{
         transition: all linear .2s;
         &:hover{
             text-decoration: none;
-            color: $second-color;
         }
     }
 }
@@ -368,20 +353,13 @@ transform:  rotate(180deg)  !important;
 
 
 @include min-768 {
-    .li-drop > a:hover::after{
-        color: $second-color;
-    }
     .lang-close-mob{
       display: none;
     }
 
 
   
-  .account-user i {
-    &:hover{
-        color: $second-color;
-    }
-  }
+
 
   
 }

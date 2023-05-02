@@ -228,9 +228,12 @@ const  categories = new Swiper(' .categories  .swiper', {
     prevEl: '.categories .swiper-button-prev',
   },
   breakpoints: {
-  
-    360: {
+    250: {
       slidesPerView: 2,
+      spaceBetween: 15
+    },
+    360: {
+      slidesPerView: 3,
       spaceBetween: 15
     },
     550: {
@@ -333,7 +336,7 @@ $(window).on("scroll", function () {
       }
       
   } else {
-    $("header").removeClass("fixed fixed-header");
+    $("header").removeClass("fixed fixed-header border-bottom");
       $(".search").removeClass("d-none");
       $(".open-search-btn").removeClass("d-block") ;
       if($(window).scrollTop() == 0 ){

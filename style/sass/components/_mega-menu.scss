@@ -41,9 +41,6 @@
     justify-content: center;
     align-items: center;
     &:hover{
-        .mega-item-text{
-            color: $second-color;
-        }
         .mega-img-holder{
             img{
                 border-color: $second-color;
@@ -62,17 +59,11 @@
     color: $main-color;
     text-align: center;
     transition: all linear .2s;
-    &:hover{
-        color: $second-color;
-    }
 }
 
 @include min-992{
     .mega-item{
         &:hover{
-            .mega-item-text{
-                color: $second-color;
-            }
             .mega-img-holder{
                 img{
                     border-color: $second-color;

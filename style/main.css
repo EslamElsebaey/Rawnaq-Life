@@ -76,7 +76,7 @@ body {
   transition: all linear 0.2s;
 }
 .title-text a:hover {
-  color: #ffada4;
+  color: #904a42;
 }
 
 .item-parent {
@@ -107,9 +107,6 @@ img {
   background-color: rgba(144, 74, 66, 0.2);
   border-radius: 50%;
   transition: all linear 0.2s;
-}
-.mainBanner .swiper-button-next:hover, .mainBanner .swiper-button-prev:hover {
-  background-color: #ffada4;
 }
 .mainBanner .swiper-button-next i, .mainBanner .swiper-button-prev i {
   font-size: 20px;
@@ -170,7 +167,6 @@ img {
   top: 0;
   width: 100%;
   height: 5px;
-  background-color: #ffada4;
   background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
   background-repeat: repeat-x;
   border-radius: 5px;
@@ -342,7 +338,6 @@ body {
 }
 .search input:focus {
   outline: none;
-  border-color: #ffada4;
 }
 
 .lang {
@@ -356,9 +351,6 @@ body {
 }
 .lang span {
   transition: all linear 0.2s;
-}
-.lang:hover span {
-  color: #ffada4;
 }
 .lang img {
   -webkit-margin-start: 6px;
@@ -391,9 +383,6 @@ body {
   -webkit-margin-start: 30px;
           margin-inline-start: 30px;
 }
-.favourite:hover i {
-  color: #ffada4;
-}
 
 .lang-type {
   font-size: 12px;
@@ -422,9 +411,6 @@ body {
 }
 .cart i {
   transition: all linear 0.2s;
-}
-.cart:hover i {
-  color: #ffada4;
 }
 
 .cart div {
@@ -485,7 +471,6 @@ nav .closeBtn {
 }
 .ul-navbar > li > .nav-ancor:hover {
   text-decoration: none;
-  color: #ffada4;
 }
 
 .li-drop {
@@ -584,14 +569,8 @@ nav .closeBtn {
   }
 }
 @media only screen and (min-width: 768px) {
-  .li-drop > a:hover::after {
-    color: #ffada4;
-  }
   .lang-close-mob {
     display: none;
-  }
-  .account-user i:hover {
-    color: #ffada4;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -993,9 +972,6 @@ nav .closeBtn {
   justify-content: center;
   align-items: center;
 }
-.mega-item:hover .mega-item-text {
-  color: #ffada4;
-}
 .mega-item:hover .mega-img-holder img {
   border-color: #ffada4;
 }
@@ -1011,14 +987,8 @@ nav .closeBtn {
   text-align: center;
   transition: all linear 0.2s;
 }
-.mega-item-text:hover {
-  color: #ffada4;
-}
 
 @media only screen and (min-width: 992px) {
-  .mega-item:hover .mega-item-text {
-    color: #ffada4;
-  }
   .mega-item:hover .mega-img-holder img {
     border-color: #ffada4;
   }
@@ -1222,16 +1192,9 @@ nav .closeBtn {
   background-color: #fff9df;
 }
 
-.most-viewed, .special-offers, .bestseller {
-  border-bottom: 1px solid #f2f2f2;
-}
-
 @media only screen and (min-width: 768px) {
   .product-item:hover .img-holder img {
     transform: scale(1.1);
-  }
-  .product-item:hover .item-desc .brand-name {
-    color: #ffada4;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1345,18 +1308,12 @@ nav .closeBtn {
   background-color: #fff9df;
   border-color: #fff9df;
 }
-.category-item:hover .product-name, .category-item:hover .book-name, .mega-item:hover .product-name, .mega-item:hover .book-name {
-  color: #ffada4;
-}
 .category-item .plate, .mega-item .plate {
   transition: all linear 0.3s;
 }
 
 .product-ancor {
   display: block;
-}
-.product-ancor:hover .product-name {
-  color: #ffada4;
 }
 
 .book-name {
@@ -1367,9 +1324,6 @@ nav .closeBtn {
   transition: all linear 0.2s;
   margin-top: 15px;
   text-transform: capitalize;
-}
-.book-name:hover {
-  color: #ffada4;
 }
 .book-name:focus {
   text-decoration: none;
@@ -1461,10 +1415,11 @@ nav .closeBtn {
     bottom: -50px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .book-holder {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
+    padding: 25px;
   }
   .books-banner a {
     height: 130px;

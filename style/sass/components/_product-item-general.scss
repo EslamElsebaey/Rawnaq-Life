@@ -182,18 +182,12 @@
 
 
 
-.most-viewed , .special-offers , .bestseller{
-    border-bottom: 1px solid #f2f2f2;
-}
 
 @include min-768 {
     .product-item{
         &:hover{
             .img-holder img {
                 transform: scale(1.1);
-            }
-            .item-desc .brand-name{
-                color: $second-color;
             }
         }
     }

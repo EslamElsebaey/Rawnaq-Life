@@ -31,9 +31,6 @@
             background-color: #fff9df;
             border-color: #fff9df;
         }
-        .product-name , .book-name{
-            color: $second-color;
-        }
     }
     .plate{
         transition: all linear .3s;
@@ -42,11 +39,6 @@
 
 .product-ancor{
     display: block;
-    &:hover{
-        .product-name{
-            color: $second-color;
-        }
-    }
 }
 .book-name{
     font-size: 16px;
@@ -56,9 +48,6 @@
     transition: all linear .2s;
     margin-top: 15px;
     text-transform: capitalize;
-&:hover{
-    color: $second-color;
-}
 &:focus{
     text-decoration: none;
 }
@@ -166,10 +155,11 @@
     }
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width : 600px) {
     .book-holder{
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
+        padding: 25px;
     }
     .books-banner a{
         height: 130px;
