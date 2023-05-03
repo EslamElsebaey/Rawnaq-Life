@@ -1325,6 +1325,9 @@ nav .closeBtn {
   margin-top: 15px;
   text-transform: capitalize;
 }
+.book-name:hover {
+  color: #904a42;
+}
 .book-name:focus {
   text-decoration: none;
 }

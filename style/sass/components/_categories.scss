@@ -48,6 +48,9 @@
     transition: all linear .2s;
     margin-top: 15px;
     text-transform: capitalize;
+    &:hover{
+        color: #904a42;
+    }
 &:focus{
     text-decoration: none;
 }

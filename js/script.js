@@ -216,7 +216,7 @@ const  clientsReview = new Swiper(' .clients-reviews  .swiper', {
 
 const  categories = new Swiper(' .categories  .swiper', {
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   draggable: true,
  
   pagination: {
